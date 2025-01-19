@@ -1,0 +1,88 @@
+/* STYLING THE MASTER PROJECT */
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    padding: 50px;
+    text-align: center;
+    background: rgb(17, 143, 158); 
+    color: #edf1f2;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+nav{
+    background-color: #333;
+
+    /* we use this to make the float:left; work below */
+    overflow: hidden;
+}
+
+nav a{
+    /* to make the row into column */
+    display: block;
+    color: white;
+
+    /* to remove undeline from these links */
+    text-decoration: none;
+    padding: 14px 20px;
+    
+    /* this wont work until we use overflow:hidden; abobe in the nav style and also the column will now change to row again */
+    float: left;
+}
+
+section{
+    text-align: center;
+    padding-top: 40px;
+    height: 100vh;
+}
+
+/* for selecting only the even serial numbered sections */
+section:nth-child(even){
+    background-color: #ececec;
+}
+
+iframe{
+    padding: 0px 5px;
+}
+
+img{
+    padding: 0px 20px;
+}
+
+h2{
+    padding-bottom: 40px;
+}
+
+footer{
+    overflow: hidden;
+    background-color: #333;
+}
+
+footer a{
+    /* we will use the same as nav a{} style */
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    float: left;   
+}
+
+
+/* because the copyright symbol is always on the right in websites */
+.copyright{
+    float: right;
+}
+
+section h5{
+    /* 0px margin on top and bottom and 130px in right and left */
+    margin: 0px 130px;
+}
